@@ -4,32 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <section id="s1">
 
-        <h1>Let's play the rock / paper / sissor game</h1>
+        <h1 class="h1class">Let's play the <span class="sp1">rock </span>|<span class="sp2"> paper </span> |<span class="sp3"> sissor</span> game</h1>
     
+        <div class="playhand">
+            
+            <div class="mediv">
+                <h2 class="hid">Me</h2>
+                <div id="div1"> <span class="h1r">✊</span> </div>
+            </div>
 
-        <h2 id="hid">Me</h2>
+            <p class="vs">Vs</p>
 
-        <div id="div1"> ✊ </div>
-        <div id="scodiv1">Score:0</div>
-        <br><br><br>
-        <h2 id="hid">You</h2>
-        <div id="div2"> ✊ </div>
-        <div id="scodiv2">Score:0</div>
-
-        <br><br>
+            <div class="youdiv">
+                <h2 class="hid">You</h2>
+                <div id="div2"> <span class="h2r">✊</span> </div>
+            </div>
+            
+        </div>
         
-        <h2 >Your Turn! choose any one of the below</h2>
+        <h2 class="wintext" >Your Turn! choose any one of the below</h2>
 
-        <button id="b1" onclick="randomc(),youclick1(),scorec()">🪨</button>
-        <button id="b2" onclick="randomc(),youclick2(),scorec()">📰</button>
-        <button id="b3" onclick="randomc(),youclick3(),scorec()">✂️</button>
+        <div class="selectbtn">
+            <button id="b1" onclick="randomc(),youclick1(),scorec()">🪨</button>
+            <button id="b2" onclick="randomc(),youclick2(),scorec()">📰</button>
+            <button id="b3" onclick="randomc(),youclick3(),scorec()">✂️</button>
+        </div>
+        
+        
 
-        <br><br>
+        <div class="scored1">
+            <div class="sdiv1">
+                <span>My Score</span>
+                <span >Score:<span id="scodiv1">0</span></span>
+            </div>
+            <div class="sdiv1">
+                <span>Your Score</span>
+                <span >Score:<span id="scodiv2">0</span></span>
+    
+            </div>
+        </div>
 
         <h1 id="win"></h1>
         
