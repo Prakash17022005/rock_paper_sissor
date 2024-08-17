@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <section id="s1">
+
+        <h1>Let's play the rock / paper / sissor game</h1>
+    
+
+        <h2 id="hid">Me</h2>
+
+        <div id="div1"> ✊ </div>
+        <div id="scodiv1">Score:0</div>
+        <br><br><br>
+        <h2 id="hid">You</h2>
+        <div id="div2"> ✊ </div>
+        <div id="scodiv2">Score:0</div>
+
+        <br><br>
+        
+        <h2 >Your Turn! choose any one of the below</h2>
+
+        <button id="b1" onclick="randomc(),youclick1(),scorec()">🪨</button>
+        <button id="b2" onclick="randomc(),youclick2(),scorec()">📰</button>
+        <button id="b3" onclick="randomc(),youclick3(),scorec()">✂️</button>
+
+        <br><br>
+
+        <h1 id="win"></h1>
+        
+
+    </section>
+    
+
+    <script src="rps.js"></script>
+</body>
+</html>
